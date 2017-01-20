@@ -62,10 +62,7 @@ public class SelectBot extends JFrame implements MouseListener, MouseMotionListe
     }
 
     @Override
-    public void mouseClicked(MouseEvent e) {
-        //System.out.println("x: " + e.getX());
-        //System.out.println("y: " + e.getY());
-    }
+    public void mouseClicked(MouseEvent e) {}
 
     @Override
     public void mouseEntered(MouseEvent e) {}
@@ -85,6 +82,8 @@ public class SelectBot extends JFrame implements MouseListener, MouseMotionListe
 
     @Override
     public void mouseReleased(MouseEvent e) {
+        System.out.println("x: " + e.getX());
+        System.out.println("y: " + e.getY());
         actualmouseendX = MouseInfo.getPointerInfo().getLocation().x;
         actualmouseendY = MouseInfo.getPointerInfo().getLocation().y;
 

@@ -43,14 +43,6 @@ public class SearchBot {
         s.search();
     }
 
-    public int getScreenWidth() {
-        return _screenWidth;
-    }
-
-    public int getScreenHeight() {
-        return _screenHeight;
-    }
-
     public void camera() {
         Rectangle rekt = new Rectangle(0, 0, _screenWidth, _screenHeight);
         _screenshot = _robo.createScreenCapture(rekt);
